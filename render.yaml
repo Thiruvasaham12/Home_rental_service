@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: Home_rental_service
+    env: python
+    plan: free
+    root: Flat_Rent_django
+    autoDeploy: true
+    buildCommand: pip install -r requirements.txt && python manage.py collectstatic --noinput
+    startCommand: gunicorn Flat_Rent_django.wsgi:application --bind 0.0.0.0:$PORT
+    envVars:
+      - key: DJANGO_DEBUG
+        value: "False"
+      - key: DJANGO_ALLOWED_HOSTS
+        value: ".onrender.com,127.0.0.1,localhost"
