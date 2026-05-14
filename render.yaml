@@ -5,7 +5,7 @@ services:
     plan: free
     root: Flat_Rent_django
     autoDeploy: true
-    buildCommand: pip install -r requirements.txt && python manage.py collectstatic --noinput
+    buildCommand: pip install -r requirements.txt && python manage.py collectstatic --clear --noinput
     startCommand: gunicorn Flat_Rent_django.wsgi:application --bind 0.0.0.0:$PORT
     envVars:
       - key: DJANGO_DEBUG
