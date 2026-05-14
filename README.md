@@ -35,3 +35,8 @@ From `Flat_Rent_django`:
 ```bash
 python manage.py runserver
 ```
+<img width="1919" height="966" alt="image" src="https://github.com/user-attachments/assets/b7ffdd24-877e-4044-bed8-1ddcd84fbff5" />
+<img width="1671" height="480" alt="image" src="https://github.com/user-attachments/assets/021207e3-db0f-447d-8f8f-b169933c370c" />
+<img width="1722" height="906" alt="image" src="https://github.com/user-attachments/assets/9aeb426e-3e79-4d9a-a8f6-7f0239988e3f" />
+
+
